@@ -1,0 +1,133 @@
+<html>
+
+<title>Antoni music🎵</title>
+	<head>
+		<meta charset="UTF-8">
+  
+    <title>MENU Sample</title>
+    <style>
+
+    	body {
+    		margin: 0;
+    	}
+
+    	.background{
+		background-image: url("vibrant-fantasy-shapes-flow-blurred-motion-generated-by-ai.jpg");
+		margin: 0;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+		}
+
+        .menu {  /* עיצוב שורת התפריט הראשית */
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: hidden;
+            background-color: rgba(255, 87, 51, 0.9);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;  /* מוריד את התפריט 20 פיקסלים מהקצה העליון של המסך */
+            box-shadow: -1px 3px 4px rgba(0, 0, 0, 0.3);
+            height: 100px;
+        }
+
+		.menu a {   /* בשורת התפריט 'a' עיצוב תווית */
+			float: right;
+			flex-grow: 1;
+			font-size: 10px;
+			background-color: inherit;
+			text-decoration: none;
+			color: white;
+			font-family: inherit;
+			width: 200px;
+		}
+
+		.menu a h1 {
+			text-align: center;
+			height: 100%;
+			margin: 0;
+			line-height: 100px;
+			font-size: 18pt;
+		}
+
+        .dropbtn {
+            float: right;
+            overflow: hidden;
+        }
+
+        .dropbtn .btn {  /* עיצוב כותרת התפריט הנפתח */
+            border: none;
+            background-color: gray;
+            padding: 111px 144px;
+            color: white;
+            font-family: inherit;
+            font-size: 16px;
+        }
+
+        .menu a:hover, .dropbtn:hover .btn { /* צביעת רכיבי התפריט הראשי או כפתור התפריט הנפתח באדום וטקסט בצהוב בעת מעבר עכבר עליהם */
+            /* dropbtn:hover .btn -  משמעות השורה היא שמעבר עכבר על רכיבי התפריט הנפתח ישפיע על כותרת התפריט ויצבע אותה באדום */
+            background-color: white;
+            color: black;
+        }
+
+        .dropdown {   /* עיצוב התפריט הנפתח. מיקום קבוע, תצוגה מכובה (עד למעבר עכבר) וצבע רקע בהיר יותר */
+            position: absolute;
+            display: none;
+            background-color: yellow;
+
+        }
+
+        .dropdown a {  /* עיצוב רכיבי התפריט הנפתח. צבע טקסט כהה, ללא גלישה לימין. אנחנו רוצים שהתפריט יפתח למטה  */
+            float: none;
+            color: black;
+            display: block;
+            padding: 10px 16px;
+        }
+
+        .dropdown a:hover {   /* מעבר עכבר על הרכיבי התפריט הנפתח יצבע את רכיבי התפריט ברקע חום חול */
+            background-color: sandybrown;
+        }
+
+        .dropbtn:hover .dropdown { /* (dropdown) מעבר עכבר על כותרת התפריט הנפתח יגרום לתפריט להופיע על ידי הפעלת התצוגה של התפריט הנפתח  */
+            display: block;
+        }
+
+        .card {
+        	height: 60%;
+        	width: 60%;
+        	background-color: rgba(255, 255, 255, 0.7);
+        	padding: 20px;
+        	border-radius: 10px;
+        	box-sizing: border-box;
+        	margin: 20px auto 0px;
+
+        }
+
+        .info {
+        	font-size: 30pt;
+        	font-family: Arial;
+        	text-align: justify;
+        }
+
+    </style>
+
+
+
+
+<body dir="rtl"  class="background">
+
+<div class="menu">
+	<img src="music-svgrepo-com.svg"/>
+	<a href="antoni_music.html"><h1>הדף הראשי</h1></a>
+	<a href="antoni_page2.html"><h1>החנות</h1></a>
+	<a href="antoni_page3.html"><h1>הסבר על האתר</h1></a>
+	<a href="antoni_login.html"><h1>התחברות</h1></a>
+	<a href="antoni_signup.html"><h1>הרשמה</h1></a>
+	</div>	
+
+	<div class="card">
+		<p class="info">
+			האתר שלי הוא בעצם עבודה שעשיתי למגמת מחשבים. החלטתי לעשות חנות של כלי נגינה נפוצים. השקעתי הרבה אז אני מקווה שמגיע לי ציון טוב👍
+		</p>
+	</div>
+</body>
+</html>

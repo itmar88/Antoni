@@ -1,0 +1,190 @@
+<html>
+
+<title>Antoni music🎵</title>
+<head>
+    <meta charset="UTF-8">
+
+    <title>MENU Sample</title>
+    <style>
+
+    	body {
+    		margin: 0;
+    	}
+
+        .menu {  /* עיצוב שורת התפריט הראשית */
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: hidden;
+            background-color: #00c3a8;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;  /* מוריד את התפריט 20 פיקסלים מהקצה העליון של המסך */
+            box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.3);
+            height: 100px;
+        }
+        .background{
+			background-image: url("https://wallpaperaccess.com/full/187161.jpg");
+			margin: 0;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+		}
+
+		.menu a {   /* בשורת התפריט 'a' עיצוב תווית */
+			float: right;
+			flex-grow: 1;
+			font-size: 10px;
+			background-color: inherit;
+			text-decoration: none;
+			color: white;
+			font-family: inherit;
+			width: 200px;
+		}
+
+		.menu a h1 {
+			text-align: center;
+			height: 100%;
+			margin: 0;
+			line-height: 100px;
+			font-size: 18pt;
+		}
+
+        .dropbtn {
+            float: right;
+            overflow: hidden;
+        }
+
+        .dropbtn .btn {  /* עיצוב כותרת התפריט הנפתח */
+            border: none;
+            background-color: gray;
+            padding: 111px 144px;
+            color: white;
+            font-family: inherit;
+            font-size: 16px;
+        }
+
+        .menu a:hover, .dropbtn:hover .btn { /* צביעת רכיבי התפריט הראשי או כפתור התפריט הנפתח באדום וטקסט בצהוב בעת מעבר עכבר עליהם */
+            /* dropbtn:hover .btn -  משמעות השורה היא שמעבר עכבר על רכיבי התפריט הנפתח ישפיע על כותרת התפריט ויצבע אותה באדום */
+            background-color: white;
+            color: black;
+        }
+
+        .dropdown {   /* עיצוב התפריט הנפתח. מיקום קבוע, תצוגה מכובה (עד למעבר עכבר) וצבע רקע בהיר יותר */
+            position: absolute;
+            display: none;
+            background-color: yellow;
+
+        }
+
+        .dropdown a {  /* עיצוב רכיבי התפריט הנפתח. צבע טקסט כהה, ללא גלישה לימין. אנחנו רוצים שהתפריט יפתח למטה  */
+            float: none;
+            color: black;
+            display: block;
+            padding: 10px 16px;
+        }
+
+        .dropdown a:hover {   /* מעבר עכבר על הרכיבי התפריט הנפתח יצבע את רכיבי התפריט ברקע חום חול */
+            background-color: sandybrown;
+        }
+
+        .dropbtn:hover .dropdown { /* (dropdown) מעבר עכבר על כותרת התפריט הנפתח יגרום לתפריט להופיע על ידי הפעלת התצוגה של התפריט הנפתח  */
+            display: block;
+        }
+
+
+
+    </style>
+    <script language="javascript" type="text/javascript">
+
+	function Check()
+	{
+	<!-- בדיקת שם פרטי   -->
+	var fName = document.getElementById("FName").value;
+	if (fName.length < 2)
+	{
+	document.getElementById("FName").value = "שם חייב להכיל מינימום 2 תווים" ;
+	return false;
+	}
+
+
+	<!-- בדיקת שם משפחה   -->
+	var lName = document.getElementById("LName").value;
+	if (lName.length < 2)
+	{
+	document.getElementById("LName").value = "שם חייב להכיל מינימום 2 תווים" ;
+	return false;
+	}
+
+	<!-- בדיקת סיסמא  -->
+	var pass = document.getElementById("pass").value;
+	if (pass.length < 6 || pass.length > 8)
+	{
+	document.getElementById("pass").value = "סיסמא חייבת להכיל בין 6 ל8 תווים" ;
+	return false;
+	}
+
+	}
+
+
+
+    </script>
+</head>
+
+
+<body dir="rtl" class="background">
+
+<div class="menu">
+    <img src="music-svgrepo-com.svg"/>
+    <a href="antoni_music.html"><h1>הדף הראשי</h1></a>
+    <a href="antoni_page2.html"><h1>החנות</h1></a>
+    <a href="antoni_page3.html"><h1>הסבר על האתר</h1></a>
+    <a href="antoni_login.html"><h1>התחברות</h1></a>
+    <a href="antoni_signup.html"><h1>הרשמה</h1></a>
+</div>
+
+
+<h1 style="text-align:center;text-decoration:underline;font-size:40px
+	"> דף הרשמה לאתר </h1>
+<form action=" " method="post" name="myform" onsubmit="return Check();">
+    <table border="0" style="font-size:30px ; text-align:center">
+        <tr>
+            <td><input type="text" name="FName" id="FName" size="30"></td>
+            <td>שם פרטי</td>
+        <tr>
+
+        <tr>
+            <td><input type="text" name="LName" id="LName" size="30"></td>
+            <td>שם משפחה</td>
+        <tr>
+        <tr>
+            <td><input type="text" name="LName" id="LName" size="30"></td>
+            <td>שם משתמש</td>
+        <tr>
+        <tr>
+            <td><input type="text" name="email" id="email" size="30"></td>
+            <td>אימייל</td>
+        <tr>
+
+        <tr>
+            <td><input type="password" name="pass" id="pass" size="30"></td>
+            <td>סיסמא</td>
+        </tr>
+
+        <tr>
+            <td><input type="text" name="rpass" id="rpass" size="30"></td>
+            <td>סיסמא שנית</td>
+        </tr>
+
+        <tr>
+            <td><input type="reset" name="rese" id="rese" value="נקה"></td>
+            <td><input type="submit" name="sub" id="sub" value="שלח"></td>
+            <td><a href="antoni_music.html">
+                <button type="button">חזור לדף הבית
+            </a></td>
+        </tr>
+    </table>
+
+    </select>
+
+</form>
+</body>
+</html>
